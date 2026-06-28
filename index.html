@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Uruslan City - Скачать игру</title>
+    <link rel="icon" href="https://sun9-24.userapi.com/s/v1/ig2/oSzw920oAb1W62ItqPrjBmmjB7DljboB-41LqkZSl3UBugrzX8d3Ce8MnFJ8tutwzSmMUW1fhUZTcdGSJeFqN7KZ.jpg?quality=95&cs=64x64" sizes="64x64">
     <style>
         * {
             box-sizing: border-box;
@@ -191,10 +192,11 @@
         .btn svg {
             width: 24px;
             height: 24px;
-            fill: currentColor;
+            fill: currentColor; /* Это делает иконки белыми на кнопках */
             flex-shrink: 0;
         }
 
+        /* Адаптация под экраны (Мобильные) */
         @media (max-width: 700px) {
             .game-card {
                 flex-direction: column;
@@ -205,7 +207,7 @@
                 min-width: 100%;
             }
             .screenshots-grid {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr; /* На телефонах скриншоты друг под другом */
             }
             .game-title {
                 font-size: 24px;
@@ -219,6 +221,7 @@
         
         <div class="left-col">
             <div class="actions-block">
+                
                 <a class="btn btn-primary" href="https://github.com/djkddddrd-ship-it/konke/releases/download/v1.1/Windows.exe">
                     <svg viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M14.8143 0.111171C14.9318 0.206099 15 0.349008 15 0.500004V7H7V1.5958L14.3952 0.0111032C14.5429 -0.0205349 14.6969 0.0162435 14.8143 0.111171Z"/>
